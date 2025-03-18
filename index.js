@@ -81,7 +81,8 @@ ${error}`;
 
         const rootDirectory = '.' // Also possible to use __dirname
         const options = {
-            continueOnError: false
+            continueOnError: false,
+            retentionDays: 1
         }
 
         artifactClient.uploadArtifact(artifactName, files, rootDirectory, options)
